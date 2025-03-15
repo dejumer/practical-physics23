@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Образователен сайт по физика с практическа задача за енергийна ефективност на домашното осветление и LED технологиите"
+    />
+    <meta
+      name="keywords"
+      content="физика, енергийна ефективност, LED крушки, електрическа енергия, екология"
+    />
+    <title>Физика в действие - Енергийна ефективност</title>
+    <link rel="preload" href="styles.css" as="style" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Добавен preconnect за по-бързо зареждане на шрифтовете -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Към основното съдържание</a>
+
+    <!-- Опростена заглавна част -->
+    <header class="simplified-header">
+      <div class="container">
+        <div class="site-title-container">
+          <h1 class="simplified-title">Физика в действие</h1>
+          <p class="simplified-description">
+            Наука с практическо приложение в ежедневието
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="container">
+      <section class="intro" aria-labelledby="intro-title">
+        <h2 id="intro-title" class="section-title">
+          Енергийна ефективност на домашното осветление
+        </h2>
+        <p>
+          Добре дошли в нашия урок за енергийна ефективност! Днес ще изследваме
+          реален проблем от ежедневието – как можем да оптимизираме използването
+          на електрическа енергия в нашите домове чрез подмяна на обикновените
+          крушки с LED осветление.
+        </p>
+
+        <p>
+          Тази задача ще ни помогне да разберем по-добре понятията за
+          електрическа мощност, енергия, преобразуване на единици, както и да
+          видим практическото приложение на физичните закони в нашето ежедневие.
+          Освен това, ще направим връзка с икономиката и екологията!
+        </p>
+
+        <div
+          class="fact-box decorated"
+          role="note"
+          aria-label="Интересен факт за LED технологията"
+        >
+          <p>
+            LED (Light Emitting Diode) технологията използва 80-90% по-малко
+            енергия от традиционните крушки с нажежаема жичка и може да издържи
+            до 25 пъти по-дълго! Една LED крушка може да свети непрекъснато в
+            продължение на 3 години (или над 25,000 часа), докато обикновената
+            крушка обикновено изгаря след около 1,000 часа.
+          </p>
+        </div>
+
+        <!-- Подобрено сравнение на крушките -->
+        <div class="bulbs-comparison-container">
+          <h3 class="comparison-title">Сравнение на видовете крушки</h3>
+
+          <div
+            class="bulbs-comparison"
+            aria-label="Сравнение между обикновена и LED крушка"
+          >
+            <div
+              class="bulb-card traditional"
+              role="group"
+              aria-labelledby="traditional-title"
+            >
+              <div class="bulb-header">
+                <div
+                  class="bulb-icon traditional-icon"
+                  aria-hidden="true"
+                ></div>
+                <h4 id="traditional-title" class="bulb-title">
+                  Обикновена крушка
+                </h4>
+              </div>
+
+              <div class="bulb-body">
+                <div class="spec-item">
+                  <div class="spec-icon power-icon"></div>
+                  <div class="spec-content">
+                    <div class="spec-label">Мощност</div>
+                    <div class="spec-value">60W</div>
+                  </div>
+                </div>
+
+                <div class="spec-item">
+                  <div class="spec-icon lifetime-icon"></div>
+                  <div class="spec-content">
+                    <div class="spec-label">Живот</div>
+                    <div class="spec-value">1,000 часа</div>
+                  </div>
+                </div>
+
+                <div class="spec-item">
+                  <div class="spec-icon energy-icon"></div>
+                  <div class="spec-content">
+                    <div class="spec-label">Месечна консумация</div>
+                    <div class="spec-value">9 kWh</div>
+                  </div>
+                </div>
+
+                <div class="spec-item">
+                  <div class="spec-icon efficiency-icon"></div>
+                  <div class="spec-content">
+                    <div class="spec-label">Ефективност</div>
+                    <div class="spec-value">15%</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bulb-footer">
+                <div
+                  class="efficiency-meter"
+                  role="progressbar"
+                  aria-valuenow="15"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="efficiency-label">Ефективност</div>
+                  <div class="efficiency-bar">
+                    <div
+                      class="efficiency-fill traditional-fill"
+                      style="width: 15%"
+                    ></div>
+                  </div>
+                  <div class="efficiency-value">15%</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="comparison-divider">
+              <div class="vs-badge">VS</div>
+              <div class="divider-line"></div>
+            </div>
+
+            <div class="bulb-card led" role="group" aria-labelledby="led-title">
+              <div class="bulb-header">
+                <div class="bulb-icon led-icon" aria-hidden="true"></div>
+                <h4 id="led-title" class="bulb-title">LED крушка</h4>
+              </div>
+
+              <div class="bulb-body">
+                <div class="spec-item">
+                  <div class="spec-icon power-icon"></div>
+                  <div class="spec-content">
+                    <div class="spec-label">Мощност</div>
+                    <div class="spec-value highlight-saving">9W</div>
+                  </div>
+                </div>
+
+                <div class="spec-item">
+                  <div class="spec-icon lifetime-icon"></div>
+                  <div class="spec-content">
+                    <div class="spec-label">Живот</div>
+                    <div class="spec-value highlight-better">15,000 часа</div>
+                  </div>
+                </div>
+
+                <div class="spec-item">
+                  <div class="spec-icon energy-icon"></div>
+                  <div class="spec-content">
+                    <div class="spec-label">Месечна консумация</div>
+                    <div class="spec-value highlight-saving">1.35 kWh</div>
+                  </div>
+                </div>
+
+                <div class="spec-item">
+                  <div class="spec-icon efficiency-icon"></div>
+                  <div class="spec-content">
+                    <div class="spec-label">Ефективност</div>
+                    <div class="spec-value highlight-better">85%</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bulb-footer">
+                <div
+                  class="efficiency-meter"
+                  role="progressbar"
+                  aria-valuenow="85"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="efficiency-label">Ефективност</div>
+                  <div class="efficiency-bar">
+                    <div
+                      class="efficiency-fill led-fill"
+                      style="width: 85%"
+                    ></div>
+                  </div>
+                  <div class="efficiency-value">85%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="comparison-summary">
+            <div class="summary-card">
+              <div class="summary-icon savings-icon"></div>
+              <div class="summary-title">Спестена енергия</div>
+              <div class="summary-value">85%</div>
+            </div>
+
+            <div class="summary-card">
+              <div class="summary-icon lifespan-icon"></div>
+              <div class="summary-title">По-дълъг живот</div>
+              <div class="summary-value">15×</div>
+            </div>
+
+            <div class="summary-card">
+              <div class="summary-icon money-icon"></div>
+              <div class="summary-title">Финансова изгода</div>
+              <div class="summary-value">413 лв/год</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Подобрена секция с условие на задачата -->
+      <section
+        class="task-container enhanced-task"
+        aria-labelledby="task-title"
+      >
+        <div class="task-header">
+          <h2 id="task-title" class="section-title">Условие на задачата</h2>
+          <div class="task-icon"></div>
+        </div>
+
+        <div class="task-scenario">
+          <div class="scenario-icon"></div>
+          <div class="scenario-content">
+            <h3>Ситуация:</h3>
+            <p>
+              Семейство Петрови решава да подобри енергийната ефективност на
+              осветлението в своя дом. Те имат общо 15 лампи в къщата, всичките
+              са стари крушки с нажежаема жичка, всяка с мощност 60 W. Решават
+              да ги заменят с LED крушки, всяка с мощност 9 W, които дават
+              същото количество светлина.
+            </p>
+          </div>
+        </div>
+
+        <div class="task-questions">
+          <h3>Въпроси за решаване:</h3>
+          <ol class="questions-list">
+            <li>
+              <div class="question-number">1</div>
+              <div class="question-text">
+                Изчисли колко електрическа енергия (в kWh) консумират старите
+                крушки за един месец, ако средно светят по 5 часа на ден.
+              </div>
+            </li>
+            <li>
+              <div class="question-number">2</div>
+              <div class="question-text">
+                Изчисли колко електрическа енергия (в kWh) ще консумират новите
+                LED крушки при същите условия.
+              </div>
+            </li>
+            <li>
+              <div class="question-number">3</div>
+              <div class="question-text">
+                Каква ще бъде месечната икономия на електрическа енергия (в kWh)
+                след подмяната?
+              </div>
+            </li>
+            <li>
+              <div class="question-number">4</div>
+              <div class="question-text">
+                Ако цената на електроенергията е 0.30 лв/kWh, колко лева ще
+                спести семейството за една година?
+              </div>
+            </li>
+            <li>
+              <div class="question-number">5</div>
+              <div class="question-text">
+                Ако една LED крушка струва 6 лв, а старите крушки трябва да се
+                подменят средно на всеки 1000 часа работа (докато LED крушките
+                издържат 15000 часа), изчисли за колко месеца инвестицията в
+                новите крушки ще се изплати.
+              </div>
+            </li>
+            <li>
+              <div class="question-number">6</div>
+              <div class="question-text">
+                Изчисли колко килограма въглероден диоксид ще се спести да бъдат
+                изпуснати в атмосферата за една година, ако при производството
+                на 1 kWh електроенергия се отделят средно 0.5 kg CO₂.
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <details class="task-details styled-details">
+          <summary>Как да подходим към решаването на тази задача?</summary>
+          <div class="details-content">
+            <p>
+              За да решим задачата ефективно, трябва да следваме няколко основни
+              стъпки:
+            </p>
+            <ol class="approach-list">
+              <li>
+                <span class="approach-step">Стъпка 1:</span> Първо изчисляваме
+                общата мощност на всички крушки.
+              </li>
+              <li>
+                <span class="approach-step">Стъпка 2:</span> След това
+                определяме времето на работа за един месец.
+              </li>
+              <li>
+                <span class="approach-step">Стъпка 3:</span> Изчисляваме
+                консумираната енергия по формулата E = P × t.
+              </li>
+              <li>
+                <span class="approach-step">Стъпка 4:</span> Сравняваме
+                резултатите от старите и новите крушки.
+              </li>
+            </ol>
+          </div>
+        </details>
+      </section>
+
+      <!-- Обединено съдържание от табовете -->
+      <section class="unified-content task-container">
+        <h2 class="section-title">Теоретична информация</h2>
+
+        <div class="content-wrapper">
+          <h3>Електрическа мощност</h3>
+          <p>
+            Мощността показва колко бързо се извършва работа или колко бързо се
+            консумира енергия. Мерната единица за мощност е ват (W).
+          </p>
+
+          <h3>Електрическа енергия</h3>
+          <p>
+            Електрическата енергия е способността на електрическия ток да
+            извърши работа. Тя се изчислява чрез умножаване на мощността по
+            времето, през което работи устройството.
+          </p>
+
+          <div
+            class="formula"
+            role="math"
+            aria-label="Формула: Енергия е равна на мощност по време"
+          >
+            E = P × t
+          </div>
+
+          <p>където:</p>
+          <ul class="styled-list">
+            <li>E е енергията в джаули (J) или киловатчасове (kWh)</li>
+            <li>P е мощността във ватове (W) или киловати (kW)</li>
+            <li>t е времето в секунди (s) или часове (h)</li>
+          </ul>
+
+          <h3>Преобразуване на единици</h3>
+          <p>За да преобразуваме мощност от ватове в киловати:</p>
+          <div
+            class="formula"
+            role="math"
+            aria-label="Формула: Един киловат е равен на хиляда вата"
+          >
+            1 kW = 1000 W или P(kW) = P(W) / 1000
+          </div>
+
+          <div
+            class="fact-box decorated"
+            role="note"
+            aria-label="Интересен факт за киловатчасове"
+          >
+            <p>
+              Електроенергията, която използваме в домовете си, обикновено се
+              измерва в киловатчасове (kWh). Един киловатчас представлява
+              енергията, консумирана от устройство с мощност 1 киловат, работещо
+              в продължение на 1 час. Това е еквивалентно на 3.6 милиона джаула
+              (3.6 MJ).
+            </p>
+          </div>
+
+          <h3>Решение на задачата</h3>
+          <div class="solutions-container">
+            <div
+              class="solution decorated"
+              role="region"
+              aria-labelledby="subtask1"
+            >
+              <h4 id="subtask1">
+                Подзадача 1: Енергия, консумирана от старите крушки за един
+                месец
+              </h4>
+
+              <div class="steps">
+                <div class="step" data-step="1">
+                  <p>
+                    Първо, нека изчислим общата мощност на всички стари крушки:
+                  </p>
+                  <div
+                    class="formula"
+                    role="math"
+                    aria-label="Формула: P_стари_общо = 15 крушки × 60 W = 900 W = 0.9 kW"
+                  >
+                    P<sub>стари_общо</sub> = 15 крушки × 60 W = 900 W = 0.9 kW
+                  </div>
+                </div>
+
+                <div class="step" data-step="2">
+                  <p>След това изчисляваме времето на работа за един месец:</p>
+                  <div
+                    class="formula"
+                    role="math"
+                    aria-label="Формула: t_месец = 5 часа/ден × 30 дни = 150 часа"
+                  >
+                    t<sub>месец</sub> = 5 часа/ден × 30 дни = 150 часа
+                  </div>
+                </div>
+
+                <div class="step" data-step="3">
+                  <p>Накрая, изчисляваме консумираната енергия:</p>
+                  <div
+                    class="formula"
+                    role="math"
+                    aria-label="Формула: E_стари_месец = P_стари_общо × t_месец = 0.9 kW × 150 h = 135 kWh"
+                  >
+                    E<sub>стари_месец</sub> = P<sub>стари_общо</sub> × t<sub
+                      >месец</sub
+                    >
+                    = 0.9 kW × 150 h = 135 kWh
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="task-container" aria-labelledby="extension-title">
+        <h2 id="extension-title" class="section-title">
+          Разширение на задачата
+        </h2>
+
+        <h3>Дългосрочна икономия и екологичен ефект</h3>
+        <p>
+          Нека разгледаме какво се случва в дългосрочен план - след 10 години.
+          Това е полезно упражнение за разбиране на кумулативния ефект от
+          енергийната ефективност.
+        </p>
+
+        <div class="feature-section">
+          <div class="feature-text">
+            <div
+              class="solution decorated"
+              role="region"
+              aria-labelledby="long-term"
+            >
+              <h4 id="long-term">
+                Допълнителна задача: Дългосрочна икономия за 10 години
+              </h4>
+
+              <div class="steps">
+                <div class="step" data-step="1">
+                  <p>
+                    Изчисляваме общата консумирана енергия от старите крушки за
+                    10 години:
+                  </p>
+                  <div
+                    class="formula"
+                    role="math"
+                    aria-label="Формула: E_стари_10г = 135 kWh/месец × 12 месеца × 10 години = 16200 kWh"
+                  >
+                    E<sub>стари_10г</sub> = 135 kWh/месец × 12 месеца × 10
+                    години = 16200 kWh
+                  </div>
+                </div>
+
+                <div class="step" data-step="2">
+                  <p>
+                    Изчисляваме общата консумирана енергия от LED крушките за
+                    същия период:
+                  </p>
+                  <div
+                    class="formula"
+                    role="math"
+                    aria-label="Формула: E_LED_10г = 20.25 kWh/месец × 12 месеца × 10 години = 2430 kWh"
+                  >
+                    E<sub>LED_10г</sub> = 20.25 kWh/месец × 12 месеца × 10
+                    години = 2430 kWh
+                  </div>
+                </div>
+
+                <div class="step" data-step="3">
+                  <p>Изчисляваме спестената енергия:</p>
+                  <div
+                    class="formula"
+                    role="math"
+                    aria-label="Формула: ΔE_10г = E_стари_10г - E_LED_10г = 16200 kWh - 2430 kWh = 13770 kWh"
+                  >
+                    ΔE<sub>10г</sub> = E<sub>стари_10г</sub> - E<sub
+                      >LED_10г</sub
+                    >
+                    = 16200 kWh - 2430 kWh = 13770 kWh
+                  </div>
+                </div>
+
+                <div class="step" data-step="4">
+                  <p>
+                    Изчисляваме финансовите спестявания (приемаме постоянна
+                    цена):
+                  </p>
+                  <div
+                    class="formula"
+                    role="math"
+                    aria-label="Формула: Спестявания_10г = ΔE_10г × 0.30 лв/kWh = 13770 kWh × 0.30 лв/kWh = 4131 лв"
+                  >
+                    Спестявания<sub>10г</sub> = ΔE<sub>10г</sub> × 0.30 лв/kWh =
+                    13770 kWh × 0.30 лв/kWh = 4131 лв
+                  </div>
+                </div>
+
+                <div class="step" data-step="5">
+                  <p>Изчисляваме спестеното количество CO₂:</p>
+                  <div
+                    class="formula"
+                    role="math"
+                    aria-label="Формула: Спестен_CO₂_10г = ΔE_10г × 0.5 kg/kWh = 13770 kWh × 0.5 kg/kWh = 6885 kg CO₂ = 6.885 тона CO₂"
+                  >
+                    Спестен_CO₂<sub>10г</sub> = ΔE<sub>10г</sub> × 0.5 kg/kWh =
+                    13770 kWh × 0.5 kg/kWh = 6885 kg CO₂ = 6.885 тона CO₂
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feature-image">
+            <div class="eco-impact-card">
+              <div class="eco-icon">
+                <div class="tree-icon"></div>
+              </div>
+              <div class="eco-stats">
+                <div class="eco-stat-item">
+                  <span class="eco-value">6.9</span>
+                  <span class="eco-unit">тона CO₂</span>
+                  <span class="eco-label">спестени за 10 г.</span>
+                </div>
+                <div class="eco-stat-item">
+                  <span class="eco-value">4131</span>
+                  <span class="eco-unit">лв</span>
+                  <span class="eco-label">финансови спестявания</span>
+                </div>
+                <div class="eco-stat-item">
+                  <span class="eco-value">~35</span>
+                  <span class="eco-unit">дървета</span>
+                  <span class="eco-label">еквивалент за усвояване на CO₂</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="fact-box decorated"
+          role="note"
+          aria-label="Интересен факт за дългосрочния ефект"
+        >
+          <p>
+            За 10 години, само 15 LED крушки в един дом могат да спестят почти 7
+            тона въглероден диоксид! За сравнение, това е приблизително колкото
+            емисиите от шофиране на автомобил за 35,000 километра. Представете
+            си какъв би бил ефектът, ако всеки дом в България направи такава
+            промяна.
+          </p>
+        </div>
+      </section>
+
+      <!-- Подобрена заключителна секция -->
+      <section
+        class="conclusion enhanced-conclusion"
+        aria-labelledby="conclusion-title"
+      >
+        <div class="conclusion-header">
+          <h2 id="conclusion-title" class="section-title">
+            Обобщение и изводи
+          </h2>
+          <div class="conclusion-subtitle">Резултати от нашите изчисления</div>
+        </div>
+
+        <div class="conclusion-container">
+          <div class="conclusion-text">
+            <p class="conclusion-lead">
+              В тази задача приложихме физичните понятия за електрическа мощност
+              и енергия, за да решим реален проблем от нашето ежедневие.
+            </p>
+
+            <div class="key-findings">
+              <h3 class="findings-title">Основни изводи:</h3>
+              <ul class="findings-list">
+                <li>
+                  <div class="finding-icon energy-saving"></div>
+                  <div class="finding-text">
+                    <span class="finding-value">114.75 kWh</span>
+                    месечна икономия на енергия при подмяна на 15 крушки
+                  </div>
+                </li>
+                <li>
+                  <div class="finding-icon money-saving"></div>
+                  <div class="finding-text">
+                    <span class="finding-value">413 лв</span>
+                    спестени средства за една година
+                  </div>
+                </li>
+                <li>
+                  <div class="finding-icon time-saving"></div>
+                  <div class="finding-text">
+                    <span class="finding-value">< 3 месеца</span>
+                    период на изплащане на инвестицията от 90 лева
+                  </div>
+                </li>
+                <li>
+                  <div class="finding-icon eco-saving"></div>
+                  <div class="finding-text">
+                    <span class="finding-value">688.5 kg CO₂</span>
+                    намаляване на въглеродния отпечатък за година
+                  </div>
+                </li>
+                <li>
+                  <div class="finding-icon long-term"></div>
+                  <div class="finding-text">
+                    <span class="finding-value">4131 лв и 6.9 тона CO₂</span>
+                    спестявания за период от 10 години
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <p class="conclusion-footer">
+              Тази задача демонстрира силата на физичните закони, приложени в
+              реалния живот. Енергийната ефективност не само спестява пари, но и
+              има значителни екологични ползи. Малките промени в нашето
+              ежедневие могат да доведат до значителни резултати с течение на
+              времето!
+            </p>
+          </div>
+
+          <div class="conclusion-visual">
+            <div class="results-dashboard">
+              <div class="dashboard-header">Обобщени резултати</div>
+
+              <div class="dashboard-metrics">
+                <div class="metric-card financial">
+                  <div class="metric-icon"></div>
+                  <div class="metric-text">
+                    <div class="metric-title">Финансов ефект</div>
+                    <div class="metric-value">413 лв/год.</div>
+                  </div>
+                </div>
+
+                <div class="metric-card ecology">
+                  <div class="metric-icon"></div>
+                  <div class="metric-text">
+                    <div class="metric-title">Екологичен ефект</div>
+                    <div class="metric-value">688.5 kg CO₂/год.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="payback-chart">
+                <div class="chart-title">Период на изплащане</div>
+                <div class="chart-subtitle">
+                  Инвестиция от 90 лв. се изплаща за:
+                </div>
+                <div class="chart-visual">
+                  <div class="chart-labels">
+                    <div class="start-label">0</div>
+                    <div class="mid-label">6 месеца</div>
+                    <div class="end-label">12 месеца</div>
+                  </div>
+                  <div class="chart-bar">
+                    <div class="chart-progress" style="width: 25%">
+                      <div class="progress-marker">3 месеца</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="long-term-chart">
+                <div class="chart-title">10-годишна перспектива</div>
+                <div class="chart-subtitle">
+                  Кумулативни спестявания с времето
+                </div>
+                <div class="chart-timeline">
+                  <div class="timeline-point" style="left: 0%">
+                    <div class="timeline-year">Година 1</div>
+                    <div class="timeline-value">413 лв</div>
+                  </div>
+                  <div class="timeline-point" style="left: 30%">
+                    <div class="timeline-year">Година 3</div>
+                    <div class="timeline-value">1239 лв</div>
+                  </div>
+                  <div class="timeline-point" style="left: 60%">
+                    <div class="timeline-year">Година 6</div>
+                    <div class="timeline-value">2478 лв</div>
+                  </div>
+                  <div class="timeline-point" style="left: 100%">
+                    <div class="timeline-year">Година 10</div>
+                    <div class="timeline-value">4131 лв</div>
+                  </div>
+                  <div class="timeline-line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h3 class="footer-title">Физика в действие</h3>
+            <p class="footer-text">
+              Образователен материал създаден с цел да помогне на учениците да
+              разберат практическото приложение на физичните закони в
+              ежедневието.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4>Навигация</h4>
+            <ul class="nav-links" role="menu">
+              <li role="menuitem">
+                <a href="#" aria-current="page">Начало</a>
+              </li>
+              <li role="menuitem"><a href="#">Други задачи</a></li>
+              <li role="menuitem"><a href="#">Експерименти</a></li>
+              <li role="menuitem"><a href="#">За контакт</a></li>
+            </ul>
+          </div>
+          <div class="footer-credits">
+            <p class="footer-text">
+              © 2025 Физика в действие. Всички права запазени.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
